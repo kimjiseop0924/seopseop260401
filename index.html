@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='UTF-8'>
+    <style>
+        @import url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/Paperlogy-8ExtraBold.woff2');
+
+        :root {
+            --main-blue: #0056b3;
+            --deep-blue: #003366;
+            --light-blue: #f0f7ff;
+            --accent-blue: #007bff;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            color: var(--deep-blue);
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+        }
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            border-bottom: 2px solid var(--light-blue);
+        }
+        .content-card {
+            max-width: 1000px;
+            width: 100%;
+            background: var(--white);
+            padding: 40px;
+            border: 2px solid var(--main-blue);
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0,86,179,0.15);
+        }
+        .intro-container {
+            background: linear-gradient(135deg, var(--main-blue) 0%, var(--deep-blue) 100%);
+            padding: 80px 40px;
+            text-align: center;
+            border-radius: 30px;
+            color: white;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        .intro-title {
+            font-family: 'Paperlogy-8ExtraBold';
+            font-size: 3.5em;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .feature-grid { display: flex; justify-content: center; gap: 40px; margin-top: 40px; }
+        .feature-circle {
+            width: 70px; height: 70px; background: white; color: var(--main-blue);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.5em; font-weight: bold; margin: 0 auto 10px;
+        }
+
+        h1 {
+            font-family: 'Paperlogy-8ExtraBold';
+            font-size: 2.8em;
+            color: var(--main-blue);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h2 {
+            color: var(--main-blue);
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--main-blue);
+            padding-left: 15px;
+        }
+        .emphasize { color: var(--main-blue); font-weight: 800; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+        .info-box { background-color: var(--light-blue); padding: 20px; border-radius: 15px; margin-bottom: 15px; }
+        .blue-card { background-color: var(--main-blue); color: var(--white); padding: 25px; border-radius: 15px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 8px; padding-left: 20px; position: relative; }
+        li::before { content: '▶'; position: absolute; left: 0; color: var(--accent-blue); font-size: 0.8em; }
+        .blue-card li::before { color: var(--white); }
+    </style>
+</head>
+<body>
+
+    <!-- Page 1: Intro -->
+    <section class='page'>
+        <div class='intro-container'>
+            <div style='background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 20px;'>THE FUTURE OF MOBILITY</div>
+            <h1 class='intro-title' style='color: white;'>WEARABLE<br>ROBOTICS</h1>
+            <p style='font-size: 1.4em; opacity: 0.9; margin-top: 15px;'>경제성과 내구성을 갖춘 AI 대중화 솔루션</p>
+            <div class='feature-grid'>
+                <div class='feature-item'><div class='feature-circle'>AI</div><p>인지 연산</p></div>
+                <div class='feature-item'><div class='feature-circle'>🦾</div><p>근력 증강</p></div>
+                <div class='feature-item'><div class='feature-circle'>🛡️</div><p>보급형 혁신</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Core Technology & Sensors -->
+    <section class='page' style='background-color: var(--light-blue);'>
+        <h1>지능형 센서 및 보행 알고리즘</h1>
+        <div class='content-card' style='border: none;'>
+            <div class='grid-2'>
+                <div>
+                    <h2>정밀 센싱 및 분석</h2>
+                    <p>가격은 낮추고 성능은 극대화한 <span class='emphasize'>고효율 센서 모듈</span>을 사용합니다.</p>
+                    <ul style='margin-top: 15px;'>
+                        <li><strong>IMU & Torque:</strong> 균형과 부하를 실시간 모니터링</li>
+                        <li><strong>AI 보정:</strong> 센서 오차를 소프트웨어로 실시간 보정</li>
+                    </ul>
+                </div>
+                <div class='blue-card'>
+                    <h2>모듈형 제어 시스템</h2>
+                    <p>유지보수가 쉽고 확장이 용이한 구조로 설계되었습니다.</p>
+                    <ul style='margin-top: 15px;'>
+                        <li><strong>부품 표준화:</strong> 대량 생산을 통한 단가 절감</li>
+                        <li><strong>스마트 배터리:</strong> 고효율 전력 관리로 배터리 수명 연장</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Materials & Durability -->
+    <section class='page'>
+        <h1>경제적이고 견고한 차세대 소재</h1>
+        <div class='content-card'>
+            <div class='grid-2'>
+                <div class='info-box'>
+                    <h2>고강도 강화 폴리머 프레임</h2>
+                    <p>기존의 고가 탄소 섬유를 대체하는 <span class='emphasize'>강화 엔지니어링 플라스틱</span>을 적용했습니다.</p>
+                    <ul>
+                        <li>충격 흡수력이 뛰어나고 부식에 강함</li>
+                        <li>사출 성형 공법으로 제조 원가 60% 절감</li>
+                    </ul>
+                </div>
+                <div class='info-box'>
+                    <h2>알루미늄 6061 합금 구조</h2>
+                    <p>핵심 지지부에는 항공우주 등급의 알루미늄을 사용하여 신뢰성을 확보했습니다.</p>
+                    <ul>
+                        <li><strong>반영구적 내구성:</strong> 장시간 사용 시에도 변형 최소화</li>
+                        <li><strong>경량 설계:</strong> 가격 대비 최적의 무게 효율 달성</li>
+                    </ul>
+                </div>
+            </div>
+            <div style='text-align: center; margin-top: 30px; padding: 20px; background: var(--light-blue); border-radius: 15px;'>
+                <h3 class='emphasize'>"누구나 누릴 수 있는 보편적 이동권의 가치"</h3>
+                <p>고가 장비의 한계를 넘어 대중화를 실현하는 합리적인 로봇 솔루션</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
