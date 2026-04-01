@@ -24,7 +24,7 @@ html_code = """
   </h1>
   
   <p style="font-size: 1.2rem; margin-top: 25px; font-weight: bold;">
-    ✉️ Email: <span style="background-color: rgba(255,255,255,0.5); padding: 2px 8px; border-radius: 5px;">kimjiseop6852@gmail.com</span>
+    ✉️ Email: <spadding: 2px 8px; border-radius: 5px;">kimjiseop6852@gmail.com</span>
   </p>
 
   <div style="display: inline-block; 
@@ -40,18 +40,3 @@ html_code = """
 </div>
 """
 IPython.display.display(IPython.display.HTML(html_code))
-    margin-top: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-</style>
-</head>
-<body>
-
-<div class="container">
-  <h1> 김지섭의 Github에 오신 것을 환영합니다</h1>
-  <p>꾸준히 성장하고 기록하는 개발자</p>
-  <div class="badge">#Python #Web #OpenSource</div>
-</div>
-
-</body>
-</html>
